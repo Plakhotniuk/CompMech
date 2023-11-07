@@ -4,7 +4,7 @@ import numpy as np
 
 plt.figure()
 
-data = np.loadtxt(f'../data/SolidTidesEquator.txt')
+data = np.loadtxt(f'../data/SolidTides24Days.txt')
 
 times = data[:, 4] / 3600  # time in h
 tides = data[:, 3]
@@ -17,5 +17,5 @@ plt.grid()
 plt.xlabel('time, h')
 plt.ylabel('Tides, m')
 plt.legend()
-plt.savefig('../plots/solid_tides.png', dpi=1000)
+plt.savefig('../plots/solid_tides24days.png', dpi=1000)
 plt.show()
